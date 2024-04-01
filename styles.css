@@ -1,0 +1,108 @@
+html {
+    background-color: silver;
+}
+
+h1,
+p,
+li {
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+main {
+    position: relative;
+    top: 70px;
+}
+
+footer {
+    position: absolute;
+}
+
+section {
+    margin: 50px 0;
+    scroll-margin: 120px;
+}
+
+header {
+    background-color: silver;
+    width: 100%;
+}
+
+header div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+#nav-bar ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#nav-bar li {
+    margin: 5px 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section>div>p {
+    margin: 0;
+}
+
+.accessories {
+    width: max(20%, 180px);
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+.accessories p {
+    vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (min-width: 500px) {
+    #features-sect {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 500px) {
+    #features-sect {
+        flex-direction: column;
+    }
+}
